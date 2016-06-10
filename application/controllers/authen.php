@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Register extends CI_Controller {
+class Authen extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -28,10 +28,10 @@ class Register extends CI_Controller {
 		//$this->load->view('welcome_message');
 		echo "<h1>Hello World</h1>";
 	}
-	public function checklogined(){
+	public function isLogin(){
 		$this->load->view("welcome_message");
 	}
-	public function logout(){
+	public function isLogout(){
 		$this->load->view("logout");
 	}
 }
